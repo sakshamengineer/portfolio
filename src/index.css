@@ -1,0 +1,449 @@
+/* Styling for navbar */
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color: #1F232D;
+  color: white;
+  font-family: 'Roboto';
+}
+.navbar{
+  background-color: #1F232D;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 40px;
+  font-size: 1.2em;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', cursive;
+  transition: 0.3s;
+
+}
+li a{
+  display: inline-block;
+  animation: slidetop 1s ease forwards;
+  opacity: 0;
+  animation-delay: calc(.2s * var(--i));
+}
+.nav-links{
+  display: flex;
+}
+.nav-link:hover{
+  color: #0ef;
+  text-decoration: overline;
+  text-decoration-color: crimson;
+}
+.nav-item{
+  margin: 15px;
+  list-style: none;
+}
+.title-text{
+  margin: 15px;
+  color: white;
+  font-family: 'Roboto', cursive;
+  font-size: 26px;
+  font-weight: 400;
+  animation: slideside 1s ease forwards;
+}
+.hamburger{
+  display: none;
+  font-size: 28px;
+}
+
+/* Styling for text */
+.container-txt{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+}
+.txt{
+  font-size: clamp(1.7em, 3vw, 2em);
+}
+.text-left{
+  width: 50%;
+  font-size: clamp(9px, 2vw, 11.4px);
+}
+img{
+  height: clamp(10em, 28vw, 30em);
+  border-radius: 50%;
+  opacity: 0;
+  animation: zoomin 1s ease forwards;
+  animation-delay: 1s;
+  box-shadow: 0px 0px 40px #2a668f;
+  margin: 20px;
+  object-fit: cover;
+}
+h1{
+  margin: 10px 0px;
+  font-size: 2.1em;
+}
+.bottom-animate{
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
+  animation-delay: 0.5s;
+}
+.side-animate{
+  opacity: 0;
+  animation: slideside 1s ease forwards;
+  animation-delay: 0.8s;
+}
+.side2-animate{
+  opacity: 0;
+  animation: slideside1 1s ease forwards;
+  animation-delay: 0.8s;
+}
+p{
+  font-size: clamp(14px, 1.7vw, 19px);
+  margin: 25px 0;
+}
+span{
+  color: #06dee9;
+}
+.contact-links{
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+  gap: 15px;
+  font-size: 1.4em;
+}
+
+.links{
+  border: 2px solid #2B9DAD;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  opacity: 0;
+  animation: slideside1 1s ease forwards;
+  animation-delay: calc(.2s * var(--i));
+}
+
+.links:hover{
+  background: #000000;
+  color: #1f242d;
+  box-shadow: 0 0 15px #0ef;
+}
+i{
+  color: rgb(6, 222, 233);
+}
+
+button{
+  width: 10em;
+  height: 3em;
+  border-radius: 40px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  background: #06dee9;
+  box-shadow: 0px 0px 20px #06dee9;
+  margin: 17px 0px;
+  cursor: pointer;
+}
+.animate-btn{
+  display: inline-block;
+  opacity: 0;
+  animation: slidetop 1s ease forwards;
+  animation-delay: 1.2s;
+}
+
+
+/*  About Txt style */
+
+.about-body{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.About-container{
+  width: 82%;
+  display: flex;
+  background: #ffffff0d;
+  padding: 0px 6vw;
+  margin: 10px 10px 30px;
+  box-shadow: 0px 0px 29px #000000;
+  border-radius: 20px;
+}
+.about-para{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.about-img{
+  height: clamp(6em, 22vw, 14em);
+  width: clamp(6em, 22vw, 14em);
+}
+.Aboutbtn{
+  display: inline-block;
+  opacity: 0;
+  animation: slidetop 1s ease forwards;
+  animation-delay: 0.8s;
+}
+.AboutAnimate{
+  opacity: 0;
+  animation: slideside 1s ease forwards;
+  animation-delay: 0.5s;
+}
+.skillpara2{
+  opacity: 0;
+  animation: slideside 1s ease forwards;
+  animation-delay: 0.5s;
+}
+/* Contact page style */
+
+.CardContent{
+  text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 88vh;
+}
+.card{
+  padding: 10px 23px;
+  background: #ffffff2b;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px #90c79a;
+  opacity: 0;
+  animation: slideside1 1s ease forwards;
+  animation-delay: 0.4s;
+}
+.cardh1{
+  opacity: 0;
+  animation: slideside 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+/* Skills design*/
+
+.skillbody{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+}
+.skill-container{
+  display: flex;
+  width: 88vw;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+.Tskills{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  min-width: -webkit-fill-available;
+}
+.outerbar{
+  width: 90%;
+  display: flex;
+  background: #ffffff3b;
+  border-radius: 20px;
+  margin: 5px 0px;
+}
+.innerbar{
+  height: 13px;
+  border-radius: 20px;
+  background: #3434ba;
+  box-shadow: 0px 0px 10px black;
+  animation: skillbar 1.5s ease forwards;
+}
+.skillpara{
+  margin: 25px 0px 0px 0px;
+}
+.skillpara1{
+  margin: 0px 6px;
+}
+.pnbar{
+  display: flex;
+}
+.progress-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  opacity: 0;
+  animation: zoomin 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.progress-circle {
+  transform: rotate(-90deg);
+}
+
+.background-circle,
+.progress-bar {
+  fill: none;
+  stroke-width: 10;
+  cx: 50;
+  cy: 50;
+  r: 40;
+}
+
+.background-circle {
+  stroke: #ddd;
+}
+
+.progress-bar {
+  stroke: #4CAF50;
+  stroke-dasharray: 251.2; /* 2 * PI * R (Circumference) */
+  stroke-dashoffset: calc(251.2 * (1 - calc(0.01*var(--k)))); /* Adjust based on progress */
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+}
+.Pskills{
+  width: -webkit-fill-available;
+  text-align: center;
+}
+.pskills{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin: 3em 0px;
+}
+.stype{
+  display: flex;
+  gap: 4%;
+  width: 100%;
+}
+.SkillCard{
+  background: color(srgb 1 1 1 / 0.1);
+  padding: 25px 2vw;
+  border-radius: 25px;
+  box-shadow: 0px 0px 20px black;
+  margin: 20px;
+}
+h1{
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
+}
+/* responsive design */
+
+
+@media (max-width : 640px){
+  .nav-links{
+      position: fixed;
+      top: 61px;
+      left: 0;
+      width: 100%;
+      background: #161b27d4;
+      flex-direction: column;
+      align-items: center;
+      clip-path: circle(0% at 100% 0);
+      transition: all 0.3s ease;
+  }
+  .About-container{
+    flex-direction: column-reverse;
+  }
+  .clg-img{
+    display: flex;
+    justify-content: center;
+  }
+  .active{
+      clip-path: circle(144% at 100% 0);
+
+  }
+  .container-txt{
+      flex-direction: column-reverse;
+  }
+  .txt {
+      font-size: 1.5em;
+  }
+  .hamburger{
+      display: block;
+      cursor: pointer;
+  }
+  .text-left{
+      width: 80%;
+  }
+  .innernav{
+      position: fixed;
+  }
+}
+
+/* key frames */
+
+@keyframes slideBottom{
+  0%{
+      transform: translateY(-100px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+@keyframes slideside{
+  0%{
+      transform: translateX(-100px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+@keyframes slideside1{
+  0%{
+      transform: translateX(100px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+@keyframes slidetop{
+  0%{
+      transform: translateY(100px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+@keyframes zoomin{
+  0%{
+      transform: scale(0);
+      opacity: 0;
+  }
+  100%{
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+@keyframes skillbar{
+  0%{
+    width: 0%;
+}
+100%{
+    width: var(--j);
+}
+}
