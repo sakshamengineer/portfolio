@@ -27,7 +27,10 @@ export default function Navbar() {
                             <Link className="nav-link" style={{ '--i': 2 }} to="/about">About Me</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" style={{ '--i': 3 }} to="/skills">Skills</Link>
+                            <Link className="nav-link" style={{ '--i': 3 }} to="/projects">Projects</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" style={{ '--i': 4 }} to="/skills">Skills</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" style={{ '--i': 5 }} to="/contact">Contact</Link>

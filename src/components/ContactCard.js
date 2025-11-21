@@ -9,8 +9,8 @@ export default function ContactCard() {
         <img src= {myimg} alt="Myimg" style={{animationDelay: '0.5s',height:'200px'}} />
         <h2>Saksham Gupta</h2>
         <h3>Frontend Developer</h3>
-        <p>Phone: +91-9911912563</p>
-        <p>Email: sakshamkgupta01@gmail.com</p>
+        <p>Phone: <a href="tel:+919911912563">+91-9911912563</a></p>
+        <p>Email : <a href='mailto:sakshamkgupta01@gmail.com'>sakshamkgupta01@gmail.com</a></p>
       </div>
     </div>
   )
