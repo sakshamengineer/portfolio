@@ -14,7 +14,8 @@ export default function Text() {
                             sequence={[
                                 " Frontend Developer", 1500,
                                 " Coder", 1500,
-                                " Btech Student", 1500
+                                " AIML Enthusiast", 1500,
+                                " AI Vision Developer", 1500 
                             ]}
                             wrapper="span"
                             speed={40}
