@@ -7,6 +7,7 @@ import FoodSaver from '../Project_images/FoodSaver.jpg'
 import Aimouse from '../Project_images/AIMouse.png'
 import Aipainter from '../Project_images/AiPainter.png'
 import GestureVolume from '../Project_images/GestureControl.png'
+import jobrecommender from '../Project_images/jobrecommender.png'
 
 export default function ProjectContent() {
   function Projectcard(props){
@@ -44,6 +45,13 @@ export default function ProjectContent() {
   }
 
   const projects = [
+    {
+     name: "Job Recommender",
+      descr: "Job Recommender System recommends multiple suitable job roles from a candidate's skills and show personalized career roadmaps.",
+      source: jobrecommender,
+      weblink: "https://jobrolerecommender.streamlit.app/",
+      codelink: "https://jobrolerecommender.streamlit.app/"
+    },
     {
       name: "Carbon-Zero",
       descr: "A sustainability-focused web app that calculates carbon footprints and helps reduce emissions.",
