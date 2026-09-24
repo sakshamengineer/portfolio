@@ -29,7 +29,7 @@ export default function Text() {
                     <a className="links" style={{'--i' : 8}} href='https://www.instagram.com/sakshamgupta9969/'  target="_blank" rel='noreferrer'><i className='bx bxl-instagram' style={{color:'#06dee9'}} ></i></a>
                     <a className="links" style={{'--i' : 9}} href='https://www.linkedin.com/in/saksham-gupta-80b952323/'  target="_blank" rel='noreferrer'><i className='bx bxl-linkedin' style={{color:'#06dee9'}} ></i></a>
                 </div>
-                <a href="https://drive.google.com/file/d/1fBzvdH6VMOQvr6Glh4BZa0C8IAgGnp5W/view?usp=sharing"  target="_blank" className='animate-btn' rel="noreferrer"><button>Download CV</button></a>
+                <a href="https://drive.google.com/file/d/1UW0vQuOH7PKDiM9Zs3wY5H7ePoU_6Lcw/view?usp=sharing"  target="_blank" className='animate-btn' rel="noreferrer"><button>Download CV</button></a>
             </div>
             <div className="right">
                 <img src={myimg} alt="my img" />
